@@ -1,0 +1,5 @@
+_raw-data/
+_scratch/
+docs/
+*.html
+!tmpl-*.html

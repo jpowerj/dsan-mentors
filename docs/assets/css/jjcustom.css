@@ -1,0 +1,45 @@
+.duedates td:not(:first-child) {
+    font-size: 75% !important;
+}
+
+.menu-text {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.sidebar-header {
+    height: auto !important;
+}
+
+.sidebar-icon {
+    font-size: 85% !important;
+}
+
+.smaller-text {
+    font-size: 85% !important;
+}
+
+.subtitle {
+    display: inline-block !important;
+    font-size: 75% !important;
+    font-style: italic !important;
+    line-height: 1.2rem !important;
+}
+
+@media screen and (max-width: 600px) {
+    .subtitle, .term {
+        display: unset !important;
+        visibility: hidden !important;
+        display: none !important;
+        clear: both;
+        float: left;
+    }
+}
+
+.term {
+    display: inline-block !important;
+    font-size: 80% !important;
+    line-height: 1.2rem !important;
+}

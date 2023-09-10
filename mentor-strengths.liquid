@@ -1,0 +1,37 @@
+---
+strengths:
+  - title: "I am familiar with life in DC"
+    id: "familiar"
+    icon: "fa-solid fa-champagne-glasses"
+  - title: "I am familiar with the international processes for studying in the US"
+    id: "international"
+    icon: "fa-solid fa-globe"
+  - title: "I am friendly and welcoming"
+    id: "friendly"
+    icon: "fa-solid fa-face-smile"
+  - title: "I am strong academically"
+    id: "academic"
+    icon: "fa-solid fa-award"
+  - title: "I enjoy organizing social activities"
+    id: "organizing"
+    icon: "fa-solid fa-people-group"
+  - title: "I have become very familiar with the campus"
+    id: "campus"
+    icon: "fa-solid fa-building-columns"
+  - title: "I have work and/or internship experience"
+    id: "experience"
+    icon: "fa-solid fa-briefcase"
+  - title: "I used to be a mentor in my undergrad"
+    id: "mentor"
+    icon: "fa-solid fa-graduation-cap"
+---
+```{=html}
+{% for strength in strengths %}
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="strength-{{ strength.id }}-checkbox" value="{{ strength.title }}" checked disabled>
+    <label class="form-check-label" for="strength-{{ strength.id }}-checkbox">
+      <i class="{{ strength.icon }}"></i>&nbsp;{{ strength.title }}
+    </label>
+</div>
+{% endfor %}
+```

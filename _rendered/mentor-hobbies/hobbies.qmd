@@ -1,0 +1,171 @@
+```{=html}
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-art-checkbox" value="Art / Art History" checked disabled>
+    <label class="form-check-label" for="hobby-art-checkbox">
+      <i class="fa-solid fa-paintbrush" title="Art / Art History"></i>&nbsp;Art / Art History
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-bars-checkbox" value="Bars & Clubs" checked disabled>
+    <label class="form-check-label" for="hobby-bars-checkbox">
+      <i class="fa-solid fa-martini-glass" title="Bars & Clubs"></i>&nbsp;Bars & Clubs
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-boardgames-checkbox" value="Board / Card Games" checked disabled>
+    <label class="form-check-label" for="hobby-boardgames-checkbox">
+      <i class="fa-solid fa-game-board" title="Board / Card Games"></i>&nbsp;Board / Card Games
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-cooking-checkbox" value="Cooking" checked disabled>
+    <label class="form-check-label" for="hobby-cooking-checkbox">
+      <i class="fa-solid fa-kitchen-set" title="Cooking"></i>&nbsp;Cooking
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-crafts-checkbox" value="Creative Projects" checked disabled>
+    <label class="form-check-label" for="hobby-crafts-checkbox">
+      <i class="fa-solid fa-pen-ruler" title="Creative Projects"></i>&nbsp;Creative Projects
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-cycling-checkbox" value="Cycling" checked disabled>
+    <label class="form-check-label" for="hobby-cycling-checkbox">
+      <i class="fa-solid fa-person-biking" title="Cycling"></i>&nbsp;Cycling
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-dancing-checkbox" value="Dancing" checked disabled>
+    <label class="form-check-label" for="hobby-dancing-checkbox">
+      <i class="fa-solid fa-party-horn" title="Dancing"></i>&nbsp;Dancing
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-film-checkbox" value="Film Enthusiast" checked disabled>
+    <label class="form-check-label" for="hobby-film-checkbox">
+      <i class="fa-solid fa-film" title="Film Enthusiast"></i>&nbsp;Film Enthusiast
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-fitness-checkbox" value="Fitness" checked disabled>
+    <label class="form-check-label" for="hobby-fitness-checkbox">
+      <i class="fa-solid fa-heart-pulse" title="Fitness"></i>&nbsp;Fitness
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-food-checkbox" value="Foodie / Restaurants" checked disabled>
+    <label class="form-check-label" for="hobby-food-checkbox">
+      <i class="fa-solid fa-pizza-slice" title="Foodie / Restaurants"></i>&nbsp;Foodie / Restaurants
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-hiking-checkbox" value="Hiking" checked disabled>
+    <label class="form-check-label" for="hobby-hiking-checkbox">
+      <i class="fa-solid fa-person-hiking" title="Hiking"></i>&nbsp;Hiking
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-lang-checkbox" value="Languages" checked disabled>
+    <label class="form-check-label" for="hobby-lang-checkbox">
+      <i class="fa-solid fa-language" title="Languages"></i>&nbsp;Languages
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-museums-checkbox" value="Museums" checked disabled>
+    <label class="form-check-label" for="hobby-museums-checkbox">
+      <i class="fa-solid fa-palette" title="Museums"></i>&nbsp;Museums
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-music-checkbox" value="Music" checked disabled>
+    <label class="form-check-label" for="hobby-music-checkbox">
+      <i class="fa-solid fa-music" title="Music"></i>&nbsp;Music
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-photog-checkbox" value="Photography" checked disabled>
+    <label class="form-check-label" for="hobby-photog-checkbox">
+      <i class="fa-solid fa-camera" title="Photography"></i>&nbsp;Photography
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-reading-checkbox" value="Reading" checked disabled>
+    <label class="form-check-label" for="hobby-reading-checkbox">
+      <i class="fa-solid fa-book-open-reader" title="Reading"></i>&nbsp;Reading
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-running-checkbox" value="Running" checked disabled>
+    <label class="form-check-label" for="hobby-running-checkbox">
+      <i class="fa-solid fa-person-running" title="Running"></i>&nbsp;Running
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-science-checkbox" value="Science" checked disabled>
+    <label class="form-check-label" for="hobby-science-checkbox">
+      <i class="fa-solid fa-flask-vial" title="Science"></i>&nbsp;Science
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-sports-checkbox" value="Sports" checked disabled>
+    <label class="form-check-label" for="hobby-sports-checkbox">
+      <i class="fa-solid fa-basketball" title="Sports"></i>&nbsp;Sports
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-travel-checkbox" value="Travel" checked disabled>
+    <label class="form-check-label" for="hobby-travel-checkbox">
+      <i class="fa-solid fa-plane" title="Travel"></i>&nbsp;Travel
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-gaming-checkbox" value="Video Games / Gaming" checked disabled>
+    <label class="form-check-label" for="hobby-gaming-checkbox">
+      <i class="fa-solid fa-gamepad" title="Video Games / Gaming"></i>&nbsp;Video Games / Gaming
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-volunteer-checkbox" value="Volunteering" checked disabled>
+    <label class="form-check-label" for="hobby-volunteer-checkbox">
+      <i class="fa-solid fa-handshake-angle" title="Volunteering"></i>&nbsp;Volunteering
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-writing-checkbox" value="Writing" checked disabled>
+    <label class="form-check-label" for="hobby-writing-checkbox">
+      <i class="fa-solid fa-pen-to-square" title="Writing"></i>&nbsp;Writing
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-yoga-checkbox" value="Yoga" checked disabled>
+    <label class="form-check-label" for="hobby-yoga-checkbox">
+      <i class="fa-solid fa-person-falling" title="Yoga"></i>&nbsp;Yoga
+    </label>
+</div>
+
+```

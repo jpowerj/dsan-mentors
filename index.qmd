@@ -1,0 +1,277 @@
+---
+title: "<span class=\"quarto-title-span px-5 py-2\">DSAN Mentorship Program</span>"
+include-in-header: "mentor-header.html"
+anchor-sections: false
+page-layout: article
+title-block-banner: true
+---
+
+```{=html}
+<a name="top-of-page"></a>
+<!-- <div class="top-banner column-screen-inset-right">
+<div>
+Data Science & Analytics sponsors a Mentorship Program to provide support for incoming students and foster a sense of community among first-year and second-year students in which second-year students serve as mentors to first-year students. Second-year student mentors act as a resource for new students. Mentors may provide guidance on topics such as: where to live, what to expect from classes, how and when to start looking for an internship, and any other questions first-year students might have. Mentors also meet with their mentees throughout the academic year. A list of all of the possible mentors, including their background, interests, and strengths, can be found in the table below. Each mentor is shown with an ID uniquely identifying them. Please make a note of that ID when submitting your preferences.
+</div> -->
+<div class="column-body">
+
+```
+
+Welcome to the DSAN Mentorship Program! Browse available mentors in the list below, (optionally) using the filters on the right to narrow the list, then indicate the **ID** values for your top 10 preferences in the mentorship preferences form.
+
+```{=html}
+  <table
+    id="mentor-table"
+    data-unique-id="id" data-detail-view="true" data-detail-view-by-click="true"
+     data-detail-formatter="detailFormatter"
+  >
+     <thead>
+          <tr>
+               <th data-field="id" data-width="100">ID</th>
+               <th data-field="status">Status</th>
+               <th data-field="major">Major</th>
+               <th data-field="Strengths" data-formatter="strengthsFormatter">Strengths</th>
+               <th data-field="Hobbies" data-formatter="hobbiesFormatter">Hobbies</th>
+          </tr>
+     </thead>
+  </table>
+</div>
+
+<div class="column-margin floating overflow-auto" style="top: 0px">
+  <div class="accordion sticky-top" id="accordionFilters">
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <button class="accordion-button p-2 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#strengthsCollapse" aria-expanded="true" aria-controls="strengthsCollapse">
+          Filter Rows
+        </button>
+      </div> <!-- end accordion-header -->
+      <div id="strengthsCollapse" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <!-- start strengths content -->
+          <form>
+          <div class="container mb-2">
+            <div class="row">
+              <div class="btn-group col-12 px-1" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="all-props" id="all-props" autocomplete="off" checked>
+                <label class="btn btn-outline-dark btn-sm p-0 col-6" for="all-props">Show All</label>
+                <input type="radio" class="btn-check" name="filter-props" id="filter-props" autocomplete="off">
+                <label class="btn btn-outline-dark btn-sm p-0 col-6" for="filter-props">Filter:</label>
+              </div><!-- end button group -->
+            </div><!-- end row -->
+          </div><!-- end button container -->
+<p class="h5 mb-1">Strengths:</p>
+```
+
+{{< include _rendered/mentor-strengths/strengths.qmd >}}
+
+```{=html}
+<p class="h5 mb-1">Hobbies:</p>
+```
+
+{{< include ./_rendered/mentor-hobbies/hobbies.qmd >}}
+
+```{=html}
+          </form>
+        </div><!-- end accordion-body -->
+      </div><!-- end accorion-collapse -->
+    </div><!-- end accordion-item -->
+  </div><!-- end accordion -->
+</div> <!-- end column-margin -->
+<script>
+    function detailFormatter(index, row) {
+        var excludeFields = ['id', 'status', 'major'];
+        var html = []
+        $.each(row, function (key, value) {
+            // Exclude fields already in the main view
+            var inExclude = excludeFields.includes(key);
+            var hasValue = value != ""
+            if (!inExclude && hasValue) {
+                html.push('<p><b>' + key + ':</b> ' + value + '</p>');
+            }
+        })
+        return html.join('')
+    }
+</script>
+
+<script>
+// Table event handlers
+var $table = $('#mentor-table');
+function updateTable() {
+  $table.bootstrapTable('filterBy', {
+    Strengths: selectedStrengths,
+    Hobbies: selectedHobbies
+  }, {
+    'filterAlgorithm': (row, filters) => {
+      console.log("starting filter");
+      // Check if any of the row's strengths are checked. If not, remove
+      var rowStrengthStr = row.Strengths;
+      var rowStrengths = rowStrengthStr.split(', ');
+      var rowContainsSomeStrengths = rowStrengths.some(strengthCheck);
+      console.log("rowContainsSomeStrengths = " + rowContainsSomeStrengths);
+      var rowHobbyStr = row.Hobbies;
+      var rowHobbies = rowHobbyStr.split(', ');
+      var rowContainsSomeHobbies = rowHobbies.some(hobbyCheck);
+      console.log("rowContainsSomeHobbies = " + rowContainsSomeHobbies);
+      return rowContainsSomeStrengths || rowContainsSomeHobbies;
+    }
+  });
+  $table.bootstrapTable('expandAllRows');
+  console.log("updateTable complete.")
+  console.log("selectedStrengths = " + selectedStrengths.join(","));
+  console.log("selectedHobbies = " + selectedHobbies.join(","));
+}
+function strengthCheck(element, index, array) {
+  return selectedStrengths.includes(element);
+}
+function hobbyCheck(element, index, array) {
+  return selectedHobbies.includes(element);
+}
+var filterState = "all";
+$('#all-props').on('click', function(event) {
+  //event.preventDefault();
+  console.log("all-props clicked");
+  selectedStrengths = allStrengths.slice();
+  selectedHobbies = allHobbies.slice();
+  updateTable();
+  $("[id^=strength-]").prop("checked", true).prop("disabled", true);
+  $("[id^=hobby-]").prop("checked", true).prop("disabled", true);
+  $("#all-props").prop("checked", true);
+  $("#filter-props").prop("checked", false);
+  filterState = "all";
+  return true;
+});
+$('#filter-props').on('click', function(event) {
+  //event.preventDefault();
+  console.log("filter-props clicked");
+  // If it was already checked, don't do anything
+  if (filterState == "filtered") {
+    console.log("already filtered, returning true");
+    return true;
+  }
+  // Do the clearing
+  selectedStrengths = [];
+  selectedHobbies = [];
+  // And update the table
+  updateTable();
+  $("[id^=strength-]").prop("checked", false).prop("disabled", false);
+  $("[id^=hobby-]").prop("checked", false).prop("disabled", false);
+  $("#all-props").prop("checked", false);
+  $("#filter-props").prop("checked", true);
+  filterState = "filtered";
+  return true;
+});
+// And for individual checks
+$("[id^=strength-]").click(function() {
+  console.log("strength clicked");
+  var invoker = $(this);
+  var isChecked = invoker.prop('checked');
+  var checkboxValue = invoker.attr('value');
+  // isChecked is *after* the click. So, update based on this value
+  if (isChecked) {
+    // They just included it
+    selectedStrengths.push(checkboxValue);
+  } else {
+    // Remove it
+    const strengthIndex = selectedStrengths.indexOf(checkboxValue);
+    if (strengthIndex > -1) {
+      selectedStrengths.splice(strengthIndex, 1);
+    } else {
+      console.log("Error: strength value '" + checkboxValue + "' not found");
+    }
+  }
+  updateTable();
+});
+$("[id^=hobby-]").click(function() {
+  var invoker = $(this);
+  console.log("hobby clicked");
+  console.log(invoker);
+  var isChecked = invoker.prop('checked');
+  var checkboxValue = invoker.attr('value');
+  console.log(invoker.attr('value'));
+  console.log(isChecked);
+  // isChecked is *after* the click. So, update based on this value
+  if (isChecked) {
+    // They just included it
+    selectedHobbies.push(checkboxValue);
+  } else {
+    // Remove it
+    const hobbyIndex = selectedHobbies.indexOf(checkboxValue);
+    if (hobbyIndex > -1) {
+      selectedHobbies.splice(hobbyIndex, 1);
+    } else {
+      console.log("Error: hobby value '" + checkboxValue + "' not found");
+    }
+  }
+  updateTable();
+});
+// Parse the .csv spreadsheet
+Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vQBF5uM7cMSFq_TkxVW0rxYZiU3vw16-IZBz1PfwMK1gDYUucXa2mtu7NEHivuUOn0yuUCELbcijlRR/pub?gid=0&single=true&output=csv", {
+  download: true,
+  header: true,
+  complete: function (results) {
+    console.log("Parsing complete:", results);
+    $table.bootstrapTable({
+      data: results.data,
+      onPostBody: function() {
+        $('[data-toggle="tooltip"]').tooltip({container:'body', trigger: 'hover', placement:"bottom"});
+      }
+    });
+    $table.bootstrapTable('expandAllRows');
+  }
+});
+var strengthDict = {
+  "I am familiar with life in DC": "fa-solid fa-champagne-glasses",
+  "I am familiar with the international processes for studying in the US": "fa-solid fa-globe",
+  "I am friendly and welcoming": "fa-solid fa-face-smile",
+  "I am strong academically": "fa-solid fa-award",
+  "I enjoy organizing social activities": "fa-solid fa-people-group",
+  "I have become very familiar with the campus": "fa-solid fa-building-columns",
+  "I have work and/or internship experience": "fa-solid fa-briefcase",
+  "I used to be a mentor in my undergrad": "fa-solid fa-graduation-cap"
+}
+var allStrengths = Object.keys(strengthDict);
+console.log(allStrengths);
+var selectedStrengths = allStrengths.slice();
+var hobbyDict = {
+  "Art / Art History": "fa-paintbrush",
+  "Bars & Clubs": "fa-martini-glass",
+  "Board / Card Games": "fa-game-board",
+  "Cooking": "fa-kitchen-set",
+  "Creative Projects": "fa-pen-ruler",
+  "Cycling": "fa-person-biking",
+  "Dancing": "fa-party-horn",
+  "Film Enthusiast": "fa-film",
+  "Fitness": "fa-heart-pulse",
+  "Foodie / Restaurants": "fa-pizza-slice",
+  "Hiking": "fa-person-hiking",
+  "Languages": "fa-language",
+  "Museums": "fa-palette",
+  "Music": "fa-music",
+  "Photography": "fa-camera",
+  "Reading": "fa-book-open-reader",
+  "Running": "fa-person-running",
+  "Science": "fa-flask-vial",
+  "Sports": "fa-basketball",
+  "Travel": "fa-plane",
+  "Video Games / Gaming": "fa-gamepad",
+  "Volunteering": "fa-handshake-angle",
+  "Writing": "fa-pen-to-square",
+  "Yoga": "fa-person-falling"
+}
+var allHobbies = Object.keys(hobbyDict);
+console.log(allHobbies);
+var selectedHobbies = allHobbies.slice();
+function strengthsFormatter(value, row) {
+  var strengthItems = value.split(', ');
+  var strengthIcons = strengthItems.map(item => '<i class="' + strengthDict[item] + '" data-bs-toggle="tooltip" data-bs-placement="bottom" title="' + item + '"></i>');
+  var strengthStr = strengthIcons.join('&nbsp;');
+  return strengthStr;
+}
+function hobbiesFormatter(value, row) {
+  var hobbyItems = value.split(', ');
+  var hobbyIcons = hobbyItems.map(item => '<i class="fa-solid ' + hobbyDict[item] + '" data-bs-toggle="tooltip" data-bs-placement="bottom" title="' + item + '"></i>');
+  var hobbyStr = hobbyIcons.join('&nbsp;');
+  return hobbyStr;
+}
+</script>
+```
+

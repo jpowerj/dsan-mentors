@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "liquidjs": "^10.8.2"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

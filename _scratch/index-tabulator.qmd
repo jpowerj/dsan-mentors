@@ -1,0 +1,113 @@
+---
+title: "DSAN Mentors Program"
+include-in-header: "mentor-header.html"
+---
+
+Welcome to the DSAN Mentors program! Browse the list of mentors below, then indicate the **id** values for your top 10 preferences in the mentorship preferences form.
+
+<div id="example-table"></div>
+
+<!-- Please login using the "Continue with Google" button below, **using your @georgetown.edu address**, to get started. -->
+
+<!-- <div id="g_id_onload"
+     data-client_id="1037961450759-bkdq7u6emstv5t2bn4ln521upufoolh4.apps.googleusercontent.com"
+     data-context="signin"
+     data-ux_mode="popup"
+     data-login_uri="https://jpj.georgetown.domains/mentors/rank.php"
+     data-auto_prompt="false">
+</div>
+
+<div class="g_id_signin"
+     data-type="standard"
+     data-shape="rectangular"
+     data-theme="outline"
+     data-text="continue_with"
+     data-size="large"
+     data-logo_alignment="left">
+</div> -->
+
+<script>
+//create Tabulator on DOM element with id "example-table"
+//define some CSV data
+// var csvData = `"Name", "Location", "Age"
+// "Oli", "London", "23"
+// "Jim", "Mancheser", "53"`;
+
+//define table
+var table = new Tabulator("#example-table", {
+    layout:"fitColumns",
+    importFormat: "array",
+    autoColumns: true,
+    initialSort:[
+        {column:"id", dir:"asc"},
+    ],
+});
+
+Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vQBF5uM7cMSFq_TkxVW0rxYZiU3vw16-IZBz1PfwMK1gDYUucXa2mtu7NEHivuUOn0yuUCELbcijlRR/pub?gid=0&single=true&output=csv", {
+     download: true,
+     header: true,
+     complete: function(results) {
+          console.log("Parsing complete:", results);
+          table.setData(results.data);
+     }
+})
+
+//trigger an alert message when the row is clicked
+// table.on("rowClick", function(e, row){ 
+// 	alert("Row " + row.getData().id + " Clicked!!!!");
+// });
+</script>
+
+<link href="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.css" rel="stylesheet">
+
+<script src="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.js"></script>
+
+<table id="table">
+  <thead>
+    <tr>
+      <th data-field="id">ID</th>
+      <th data-field="name">Item Name</th>
+      <th data-field="price">Item Price</th>
+    </tr>
+  </thead>
+</table>
+
+<script>
+  var $table = $('#mentor-table')
+
+  $(function() {
+    var data = [
+      {
+        'id': 0,
+        'name': 'Item 0',
+        'price': '$0'
+      },
+      {
+        'id': 1,
+        'name': 'Item 1',
+        'price': '$1'
+      },
+      {
+        'id': 2,
+        'name': 'Item 2',
+        'price': '$2'
+      },
+      {
+        'id': 3,
+        'name': 'Item 3',
+        'price': '$3'
+      },
+      {
+        'id': 4,
+        'name': 'Item 4',
+        'price': '$4'
+      },
+      {
+        'id': 5,
+        'name': 'Item 5',
+        'price': '$5'
+      }
+    ]
+    $table.bootstrapTable({data: data})
+  })
+</script>

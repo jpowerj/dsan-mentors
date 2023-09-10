@@ -1,0 +1,43 @@
+project:
+  type: website
+  output-dir: docs
+  preview:
+    port: 4321
+
+execute:
+  cache: true
+
+website:
+  title: "DSAN Mentorship Program"
+  #back-to-top-navigation: true
+  favicon: "/assets/img/favicon.png"
+  # navbar:
+  #   #background: "rgba(0,0,0,0.25)"
+  #   background: "secondary"
+  #   foreground: "rgba(255,255,255,0.95)"
+  #   search: false
+  sidebar:
+    style: "floating"
+    title: "DSAN Mentorship Program"
+    search: false
+    contents:
+      - text: "Back to Top"
+        href: "#top-of-page"
+    #tools:
+    #  - icon: github
+    #    href: "https://github.com/jpowerj/dsan5100"
+
+format:
+  html:
+    theme: cosmo
+    css:
+      - styles.css
+      - /assets/css/jjcustom.css
+    grid:
+      sidebar-width: 150px
+      body-width: 1200px
+      margin-width: 380px
+      gutter-width: 1.5rem
+
+
+

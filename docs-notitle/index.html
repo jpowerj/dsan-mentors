@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.361">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>DSAN Mentorship Program - &nbsp;</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href=".//assets/img/favicon.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- bootstrap css -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<!-- bootstrap JS bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<!-- PapaParse -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js" integrity="sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Bootstrap-Table css -->
+<link href="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.css" rel="stylesheet">
+<!-- Bootstrap Table js -->
+<script src="https://unpkg.com/bootstrap-table@1.21.4/dist/bootstrap-table.min.js"></script>
+<!-- FontAwesome css -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="./assets/css/jjcustom.css">
+</head>
+
+<body class="nav-sidebar floating slimcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">
+      DSAN Mentors
+      </li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">&nbsp;</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">DSAN Mentors</a> 
+    </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./#top-of-page" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Back to Top</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block page-columns page-full" id="quarto-document-content">
+
+
+
+
+
+<a name="top-of-page"></a>
+<!-- <div class="top-banner column-screen-inset-right">
+<div>
+Data Science & Analytics sponsors a Mentorship Program to provide support for incoming students and foster a sense of community among first-year and second-year students in which second-year students serve as mentors to first-year students. Second-year student mentors act as a resource for new students. Mentors may provide guidance on topics such as: where to live, what to expect from classes, how and when to start looking for an internship, and any other questions first-year students might have. Mentors also meet with their mentees throughout the academic year. A list of all of the possible mentors, including their background, interests, and strengths, can be found in the table below. Each mentor is shown with an ID uniquely identifying them. Please make a note of that ID when submitting your preferences.
+</div> -->
+<div class="column-body">
+
+<p>Welcome to the DSAN Mentors program! Browse available mentors in the list below, (optionally) using the filters on the right to narrow the list, then indicate the <strong>ID</strong> values for your top 10 preferences in the mentorship preferences form.</p>
+  
+<table id="mentor-table" data-quarto-postprocess="true" data-unique-id="id" data-detail-view="true" data-detail-view-by-click="true" data-detail-formatter="detailFormatter">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th" data-field="id" data-width="100">ID</th>
+<th data-quarto-table-cell-role="th" data-field="status">Status</th>
+<th data-quarto-table-cell-role="th" data-field="major">Major</th>
+<th data-quarto-table-cell-role="th" data-field="Strengths" data-formatter="strengthsFormatter">Strengths</th>
+<th data-quarto-table-cell-role="th" data-field="Hobbies" data-formatter="hobbiesFormatter">Hobbies</th>
+</tr>
+</thead>
+
+</table>
+
+</div>
+
+ <!-- end column-margin -->
+<div class="no-row-height column-margin column-container"><div class="floating overflow-auto" style="top: 0px">
+  <div class="accordion sticky-top" id="accordionFilters">
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <button class="accordion-button p-2 bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#strengthsCollapse" aria-expanded="true" aria-controls="strengthsCollapse">
+          Filter Rows
+        </button>
+      </div> <!-- end accordion-header -->
+      <div id="strengthsCollapse" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <!-- start strengths content -->
+          <form>
+          <div class="container mb-2">
+            <div class="row">
+              <div class="btn-group col-12 px-1" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="all-props" id="all-props" autocomplete="off" checked="">
+                <label class="btn btn-outline-dark btn-sm p-0 col-6" for="all-props">Show All</label>
+                <input type="radio" class="btn-check" name="filter-props" id="filter-props" autocomplete="off">
+                <label class="btn btn-outline-dark btn-sm p-0 col-6" for="filter-props">Filter:</label>
+              </div><!-- end button group -->
+            </div><!-- end row -->
+          </div><!-- end button container -->
+<p class="h5 mb-1">Strengths:</p>
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="strength-familiar-checkbox" value="I am familiar with life in DC" checked="" disabled="">
+    <label class="form-check-label" for="strength-familiar-checkbox">
+      <i class="fa-solid fa-champagne-glasses"></i>&nbsp;I am familiar with life in DC
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="strength-international-checkbox" value="I am familiar with the international processes for studying in the US" checked="" disabled="">
+    <label class="form-check-label" for="strength-international-checkbox">
+      <i class="fa-solid fa-globe"></i>&nbsp;I am familiar with the international processes for studying in the US
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="strength-friendly-checkbox" value="I am friendly and welcoming" checked="" disabled="">
+    <label class="form-check-label" for="strength-friendly-checkbox">
+      <i class="fa-solid fa-face-smile"></i>&nbsp;I am friendly and welcoming
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="strength-academic-checkbox" value="I am strong academically" checked="" disabled="">
+    <label class="form-check-label" for="strength-academic-checkbox">
+      <i class="fa-solid fa-award"></i>&nbsp;I am strong academically
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="strength-organizing-checkbox" value="I enjoy organizing social activities" checked="" disabled="">
+    <label class="form-check-label" for="strength-organizing-checkbox">
+      <i class="fa-solid fa-people-group"></i>&nbsp;I enjoy organizing social activities
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="strength-campus-checkbox" value="I have become very familiar with the campus" checked="" disabled="">
+    <label class="form-check-label" for="strength-campus-checkbox">
+      <i class="fa-solid fa-building-columns"></i>&nbsp;I have become very familiar with the campus
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="strength-experience-checkbox" value="I have work and/or internship experience" checked="" disabled="">
+    <label class="form-check-label" for="strength-experience-checkbox">
+      <i class="fa-solid fa-briefcase"></i>&nbsp;I have work and/or internship experience
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="checkbox" id="strength-mentor-checkbox" value="I used to be a mentor in my undergrad" checked="" disabled="">
+    <label class="form-check-label" for="strength-mentor-checkbox">
+      <i class="fa-solid fa-graduation-cap"></i>&nbsp;I used to be a mentor in my undergrad
+    </label>
+</div>
+
+<p class="h5 mb-1">Hobbies:</p>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-art-checkbox" value="Art / Art History" checked="" disabled="">
+    <label class="form-check-label" for="hobby-art-checkbox">
+      <i class="fa-solid fa-paintbrush" title="Art / Art History"></i>&nbsp;Art / Art History
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-bars-checkbox" value="Bars &amp; Clubs" checked="" disabled="">
+    <label class="form-check-label" for="hobby-bars-checkbox">
+      <i class="fa-solid fa-martini-glass" title="Bars &amp; Clubs"></i>&nbsp;Bars &amp; Clubs
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-boardgames-checkbox" value="Board / Card Games" checked="" disabled="">
+    <label class="form-check-label" for="hobby-boardgames-checkbox">
+      <i class="fa-solid fa-game-board" title="Board / Card Games"></i>&nbsp;Board / Card Games
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-cooking-checkbox" value="Cooking" checked="" disabled="">
+    <label class="form-check-label" for="hobby-cooking-checkbox">
+      <i class="fa-solid fa-kitchen-set" title="Cooking"></i>&nbsp;Cooking
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-crafts-checkbox" value="Creative Projects" checked="" disabled="">
+    <label class="form-check-label" for="hobby-crafts-checkbox">
+      <i class="fa-solid fa-pen-ruler" title="Creative Projects"></i>&nbsp;Creative Projects
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-cycling-checkbox" value="Cycling" checked="" disabled="">
+    <label class="form-check-label" for="hobby-cycling-checkbox">
+      <i class="fa-solid fa-person-biking" title="Cycling"></i>&nbsp;Cycling
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-dancing-checkbox" value="Dancing" checked="" disabled="">
+    <label class="form-check-label" for="hobby-dancing-checkbox">
+      <i class="fa-solid fa-party-horn" title="Dancing"></i>&nbsp;Dancing
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-film-checkbox" value="Film Enthusiast" checked="" disabled="">
+    <label class="form-check-label" for="hobby-film-checkbox">
+      <i class="fa-solid fa-film" title="Film Enthusiast"></i>&nbsp;Film Enthusiast
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-fitness-checkbox" value="Fitness" checked="" disabled="">
+    <label class="form-check-label" for="hobby-fitness-checkbox">
+      <i class="fa-solid fa-heart-pulse" title="Fitness"></i>&nbsp;Fitness
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-food-checkbox" value="Foodie / Restaurants" checked="" disabled="">
+    <label class="form-check-label" for="hobby-food-checkbox">
+      <i class="fa-solid fa-pizza-slice" title="Foodie / Restaurants"></i>&nbsp;Foodie / Restaurants
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-hiking-checkbox" value="Hiking" checked="" disabled="">
+    <label class="form-check-label" for="hobby-hiking-checkbox">
+      <i class="fa-solid fa-person-hiking" title="Hiking"></i>&nbsp;Hiking
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-lang-checkbox" value="Languages" checked="" disabled="">
+    <label class="form-check-label" for="hobby-lang-checkbox">
+      <i class="fa-solid fa-language" title="Languages"></i>&nbsp;Languages
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-museums-checkbox" value="Museums" checked="" disabled="">
+    <label class="form-check-label" for="hobby-museums-checkbox">
+      <i class="fa-solid fa-palette" title="Museums"></i>&nbsp;Museums
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-music-checkbox" value="Music" checked="" disabled="">
+    <label class="form-check-label" for="hobby-music-checkbox">
+      <i class="fa-solid fa-music" title="Music"></i>&nbsp;Music
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-photog-checkbox" value="Photography" checked="" disabled="">
+    <label class="form-check-label" for="hobby-photog-checkbox">
+      <i class="fa-solid fa-camera" title="Photography"></i>&nbsp;Photography
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-reading-checkbox" value="Reading" checked="" disabled="">
+    <label class="form-check-label" for="hobby-reading-checkbox">
+      <i class="fa-solid fa-book-open-reader" title="Reading"></i>&nbsp;Reading
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-running-checkbox" value="Running" checked="" disabled="">
+    <label class="form-check-label" for="hobby-running-checkbox">
+      <i class="fa-solid fa-person-running" title="Running"></i>&nbsp;Running
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-science-checkbox" value="Science" checked="" disabled="">
+    <label class="form-check-label" for="hobby-science-checkbox">
+      <i class="fa-solid fa-flask-vial" title="Science"></i>&nbsp;Science
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-sports-checkbox" value="Sports" checked="" disabled="">
+    <label class="form-check-label" for="hobby-sports-checkbox">
+      <i class="fa-solid fa-basketball" title="Sports"></i>&nbsp;Sports
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-travel-checkbox" value="Travel" checked="" disabled="">
+    <label class="form-check-label" for="hobby-travel-checkbox">
+      <i class="fa-solid fa-plane" title="Travel"></i>&nbsp;Travel
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-gaming-checkbox" value="Video Games / Gaming" checked="" disabled="">
+    <label class="form-check-label" for="hobby-gaming-checkbox">
+      <i class="fa-solid fa-gamepad" title="Video Games / Gaming"></i>&nbsp;Video Games / Gaming
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-volunteer-checkbox" value="Volunteering" checked="" disabled="">
+    <label class="form-check-label" for="hobby-volunteer-checkbox">
+      <i class="fa-solid fa-handshake-angle" title="Volunteering"></i>&nbsp;Volunteering
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-writing-checkbox" value="Writing" checked="" disabled="">
+    <label class="form-check-label" for="hobby-writing-checkbox">
+      <i class="fa-solid fa-pen-to-square" title="Writing"></i>&nbsp;Writing
+    </label>
+</div>
+
+<div class="form-check form-check-inline">
+<input class="form-check-input" type="checkbox" id="hobby-yoga-checkbox" value="Yoga" checked="" disabled="">
+    <label class="form-check-label" for="hobby-yoga-checkbox">
+      <i class="fa-solid fa-person-falling" title="Yoga"></i>&nbsp;Yoga
+    </label>
+</div>
+
+
+          </form>
+        </div><!-- end accordion-body -->
+      </div><!-- end accorion-collapse -->
+    </div><!-- end accordion-item -->
+  </div><!-- end accordion -->
+</div></div><script>
+    function detailFormatter(index, row) {
+        var excludeFields = ['id', 'status', 'major'];
+        var html = []
+        $.each(row, function (key, value) {
+            // Exclude fields already in the main view
+            var inExclude = excludeFields.includes(key);
+            var hasValue = value != ""
+            if (!inExclude && hasValue) {
+                html.push('<p><b>' + key + ':</b> ' + value + '</p>');
+            }
+        })
+        return html.join('')
+    }
+</script>
+
+<script>
+// Table event handlers
+var $table = $('#mentor-table');
+function updateTable() {
+  $table.bootstrapTable('filterBy', {
+    Strengths: selectedStrengths,
+    Hobbies: selectedHobbies
+  }, {
+    'filterAlgorithm': (row, filters) => {
+      console.log("starting filter");
+      // Check if any of the row's strengths are checked. If not, remove
+      var rowStrengthStr = row.Strengths;
+      var rowStrengths = rowStrengthStr.split(', ');
+      var rowContainsSomeStrengths = rowStrengths.some(strengthCheck);
+      console.log("rowContainsSomeStrengths = " + rowContainsSomeStrengths);
+      var rowHobbyStr = row.Hobbies;
+      var rowHobbies = rowHobbyStr.split(', ');
+      var rowContainsSomeHobbies = rowHobbies.some(hobbyCheck);
+      console.log("rowContainsSomeHobbies = " + rowContainsSomeHobbies);
+      return rowContainsSomeStrengths || rowContainsSomeHobbies;
+    }
+  });
+  $table.bootstrapTable('expandAllRows');
+  console.log("updateTable complete.")
+  console.log("selectedStrengths = " + selectedStrengths.join(","));
+  console.log("selectedHobbies = " + selectedHobbies.join(","));
+}
+function strengthCheck(element, index, array) {
+  return selectedStrengths.includes(element);
+}
+function hobbyCheck(element, index, array) {
+  return selectedHobbies.includes(element);
+}
+var filterState = "all";
+$('#all-props').on('click', function(event) {
+  //event.preventDefault();
+  console.log("all-props clicked");
+  selectedStrengths = allStrengths.slice();
+  selectedHobbies = allHobbies.slice();
+  updateTable();
+  $("[id^=strength-]").prop("checked", true).prop("disabled", true);
+  $("[id^=hobby-]").prop("checked", true).prop("disabled", true);
+  $("#all-props").prop("checked", true);
+  $("#filter-props").prop("checked", false);
+  filterState = "all";
+  return true;
+});
+$('#filter-props').on('click', function(event) {
+  //event.preventDefault();
+  console.log("filter-props clicked");
+  // If it was already checked, don't do anything
+  if (filterState == "filtered") {
+    console.log("already filtered, returning true");
+    return true;
+  }
+  // Do the clearing
+  selectedStrengths = [];
+  selectedHobbies = [];
+  // And update the table
+  updateTable();
+  $("[id^=strength-]").prop("checked", false).prop("disabled", false);
+  $("[id^=hobby-]").prop("checked", false).prop("disabled", false);
+  $("#all-props").prop("checked", false);
+  $("#filter-props").prop("checked", true);
+  filterState = "filtered";
+  return true;
+});
+// And for individual checks
+$("[id^=strength-]").click(function() {
+  console.log("strength clicked");
+  var invoker = $(this);
+  var isChecked = invoker.prop('checked');
+  var checkboxValue = invoker.attr('value');
+  // isChecked is *after* the click. So, update based on this value
+  if (isChecked) {
+    // They just included it
+    selectedStrengths.push(checkboxValue);
+  } else {
+    // Remove it
+    const strengthIndex = selectedStrengths.indexOf(checkboxValue);
+    if (strengthIndex > -1) {
+      selectedStrengths.splice(strengthIndex, 1);
+    } else {
+      console.log("Error: strength value '" + checkboxValue + "' not found");
+    }
+  }
+  updateTable();
+});
+$("[id^=hobby-]").click(function() {
+  var invoker = $(this);
+  console.log("hobby clicked");
+  console.log(invoker);
+  var isChecked = invoker.prop('checked');
+  var checkboxValue = invoker.attr('value');
+  console.log(invoker.attr('value'));
+  console.log(isChecked);
+  // isChecked is *after* the click. So, update based on this value
+  if (isChecked) {
+    // They just included it
+    selectedHobbies.push(checkboxValue);
+  } else {
+    // Remove it
+    const hobbyIndex = selectedHobbies.indexOf(checkboxValue);
+    if (hobbyIndex > -1) {
+      selectedHobbies.splice(hobbyIndex, 1);
+    } else {
+      console.log("Error: hobby value '" + checkboxValue + "' not found");
+    }
+  }
+  updateTable();
+});
+// Parse the .csv spreadsheet
+Papa.parse("https://docs.google.com/spreadsheets/d/e/2PACX-1vQBF5uM7cMSFq_TkxVW0rxYZiU3vw16-IZBz1PfwMK1gDYUucXa2mtu7NEHivuUOn0yuUCELbcijlRR/pub?gid=0&single=true&output=csv", {
+  download: true,
+  header: true,
+  complete: function (results) {
+    console.log("Parsing complete:", results);
+    $table.bootstrapTable({
+      data: results.data,
+      onPostBody: function() {
+        $('[data-toggle="tooltip"]').tooltip({container:'body', trigger: 'hover', placement:"bottom"});
+      }
+    });
+    $table.bootstrapTable('expandAllRows');
+  }
+});
+var strengthDict = {
+  "I am familiar with life in DC": "fa-solid fa-champagne-glasses",
+  "I am familiar with the international processes for studying in the US": "fa-solid fa-globe",
+  "I am friendly and welcoming": "fa-solid fa-face-smile",
+  "I am strong academically": "fa-solid fa-award",
+  "I enjoy organizing social activities": "fa-solid fa-people-group",
+  "I have become very familiar with the campus": "fa-solid fa-building-columns",
+  "I have work and/or internship experience": "fa-solid fa-briefcase",
+  "I used to be a mentor in my undergrad": "fa-solid fa-graduation-cap"
+}
+var allStrengths = Object.keys(strengthDict);
+console.log(allStrengths);
+var selectedStrengths = allStrengths.slice();
+var hobbyDict = {
+  "Art / Art History": "fa-paintbrush",
+  "Bars & Clubs": "fa-martini-glass",
+  "Board / Card Games": "fa-game-board",
+  "Cooking": "fa-kitchen-set",
+  "Creative Projects": "fa-pen-ruler",
+  "Cycling": "fa-person-biking",
+  "Dancing": "fa-party-horn",
+  "Film Enthusiast": "fa-film",
+  "Fitness": "fa-heart-pulse",
+  "Foodie / Restaurants": "fa-pizza-slice",
+  "Hiking": "fa-person-hiking",
+  "Languages": "fa-language",
+  "Museums": "fa-palette",
+  "Music": "fa-music",
+  "Photography": "fa-camera",
+  "Reading": "fa-book-open-reader",
+  "Running": "fa-person-running",
+  "Science": "fa-flask-vial",
+  "Sports": "fa-basketball",
+  "Travel": "fa-plane",
+  "Video Games / Gaming": "fa-gamepad",
+  "Volunteering": "fa-handshake-angle",
+  "Writing": "fa-pen-to-square",
+  "Yoga": "fa-person-falling"
+}
+var allHobbies = Object.keys(hobbyDict);
+console.log(allHobbies);
+var selectedHobbies = allHobbies.slice();
+function strengthsFormatter(value, row) {
+  var strengthItems = value.split(', ');
+  var strengthIcons = strengthItems.map(item => '<i class="' + strengthDict[item] + '" data-bs-toggle="tooltip" data-bs-placement="bottom" title="' + item + '"></i>');
+  var strengthStr = strengthIcons.join('&nbsp;');
+  return strengthStr;
+}
+function hobbiesFormatter(value, row) {
+  var hobbyItems = value.split(', ');
+  var hobbyIcons = hobbyItems.map(item => '<i class="fa-solid ' + hobbyDict[item] + '" data-bs-toggle="tooltip" data-bs-placement="bottom" title="' + item + '"></i>');
+  var hobbyStr = hobbyIcons.join('&nbsp;');
+  return hobbyStr;
+}
+</script>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
